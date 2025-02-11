@@ -1,9 +1,9 @@
 {
   "name": "espil-icons",
-  "version": "0.1.29",
-  "description": "svgr icons",
+  "version": "0.2.0",
+  "description": "package of icons design by Mohammad esfilar",
   "license": "ISC",
-  "author": "",
+  "author": "Meisam valizadeh",
   "type": "commonjs",
   "main": "src/index.ts",
   "module": "dist/index.esm.js",
@@ -33,5 +33,14 @@
     "rollup-plugin-dts": "^6.1.1",
     "styled-components": "^6.1.15",
     "rollup-plugin-filesize": "^10.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MeiSaM25970/espil-icons"
+  },
+  "keywords": [
+    "icon",
+    "svg",
+    "react svg"
+  ]
 }

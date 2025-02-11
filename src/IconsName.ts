@@ -184,4 +184,11 @@ export type IconsName =
   | "WarningCircleFill"
   | "WarningCircleOutline"
   | "WarningSquareFill"
-  | "WarningSquareOutline";
+  | "WarningSquareOutline"
+  | "CameraRotate"
+  | "CameraRotateFill"
+  | "Captcha"
+  | "Home"
+  | "MaximizeSquare"
+  | "MinimizeSquare"
+  | "Restart";
