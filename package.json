@@ -1,0 +1,37 @@
+{
+  "name": "espil-icons",
+  "version": "0.1.29",
+  "description": "svgr icons",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "src/index.ts",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rimraf src/Icons && rimraf dist",
+    "build": "npm run svgr && rollup -c --bundleConfigAsCjs",
+    "svgr": "svgr --icon --title-prop --typescript --replace-attr-values '#4B4B4B=currentColor' -d src/Icons Icons"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.26.8",
+    "@babel/preset-env": "^7.26.8",
+    "@babel/preset-react": "^7.26.3",
+    "@babel/preset-typescript": "^7.26.0",
+    "@babel/runtime": "^7.26.7",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@svgr/cli": "^8.1.0",
+    "@types/react": "^19.0.8",
+    "react": "^19.0.0",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.34.6",
+    "rollup-plugin-dts": "^6.1.1",
+    "styled-components": "^6.1.15",
+    "rollup-plugin-filesize": "^10.0.0"
+  }
+}
