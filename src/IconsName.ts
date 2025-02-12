@@ -191,4 +191,5 @@ export type IconsName =
   | "Home"
   | "MaximizeSquare"
   | "MinimizeSquare"
-  | "Restart";
+  | "Restart"
+  | "ChangePicture";
