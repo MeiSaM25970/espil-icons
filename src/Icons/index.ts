@@ -1,3 +1,4 @@
+export { default as ChangePicture } from "./ChangePicture";
 export { default as DollarCircleExpensive } from "./DollarCircleExpensive";
 export { default as DollarSquareExpensive } from "./DollarSquareExpensive";
 export { default as FavoriteDeselect } from "./FavoriteDeselect";
