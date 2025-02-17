@@ -1,7 +1,7 @@
 import { FC, HTMLAttributes, SVGProps } from 'react';
 import * as react_jsx_runtime from 'react/jsx-runtime';
 
-type IconsName = "AcceptedReceipt" | "Actions" | "Add" | "AddCircleFill" | "AddCircleOutline" | "AddColumn" | "AddDocument" | "AddDocumentPocket" | "AddForms" | "AddRow" | "AddSquareFill" | "AddSquareOutline" | "ArrowDownBig" | "ArrowDownFill" | "ArrowDownSmall" | "ArrowLeftBig" | "ArrowLeftFill" | "ArrowLeftSmall" | "ArrowRightBig" | "ArrowRightFill" | "ArrowRightSmall" | "ArrowUpBig" | "ArrowUpFill" | "ArrowUpSmall" | "Attachment" | "BackSingleColor" | "BasicInfo" | "BellFill" | "BellOutline" | "Calculator" | "CalculatorMinimalistic" | "Calendar" | "Calling" | "Card" | "Card2" | "CardReceive" | "CardSearch" | "CardSend" | "CardTransfer" | "ChangeLogo" | "Chat" | "Check" | "CheckCircleFill" | "CheckCircleOutline" | "Checklist" | "CheckSquareFill" | "CheckSquareOutline" | "CircleFill" | "CircleOutline" | "ClockCircle" | "ClockDark" | "ClockSquare" | "Close" | "CloseCircleFill" | "CloseCircleOutline" | "CloseSquareFill" | "CloseSquareOutline" | "Coding" | "Companies" | "Copy" | "CopyRow" | "Dashboard" | "DateTime" | "Delete" | "DeleteFill" | "DeleteRow" | "Description" | "DescriptionFill" | "DescriptionOutline" | "Direction" | "DollarCircle" | "DollarCircleCancel" | "DollarCircleChart" | "DollarCircleExpensive" | "DollarCircleIncome" | "DollarCircleTransfer" | "DollarSquare" | "DollarSquareCancel" | "DollarSquareChart" | "DollarSquareExpensive" | "DollarSquareIncome" | "DollarSquareTransfer" | "DoubleAltArrowDown" | "DoubleAltArrowLeft" | "DoubleAltArrowRight" | "DoubleAltArrowUp" | "Down" | "Download" | "DownloadFill" | "EditFill" | "EditOutline" | "EditProfile" | "EndDocument" | "EndDocumentFill" | "Enter" | "EnterFill" | "Entity" | "Exit" | "ExportDOC" | "ExportJPG" | "ExportPDF" | "ExportXLS" | "ExportZIP" | "EyeClosed" | "FavoriteDeselect" | "FavoriteSelected" | "Filter" | "FilterFill" | "FilterTable" | "ForwardSingleColor" | "GroupAction" | "HalfArrowLeft" | "HalfArrowRight" | "HandMoney" | "History" | "Image" | "Info" | "InfoCircleFill" | "InfoCircleOutline" | "InfoSquareFill" | "InfoSquareOutline" | "Left" | "Levels" | "Library" | "LikeMoney" | "Lock" | "Management" | "Menu" | "MenuHamburger" | "MenuHorizontalDots" | "MenuVerticalDots" | "MoneyBag" | "NextDocument" | "Password" | "Payable" | "PaymentOrder" | "PettyCash" | "Picture" | "Popup" | "PresetFilters" | "PreviousDocument" | "Printer" | "PrinterFill" | "Receipt" | "ReceiptEdit" | "Receivable" | "Reject" | "RejectCircleFill" | "RejectCircleOutline" | "RejectedReceipt" | "RejectedReceiptOutline" | "RejectFill" | "RejectSquareFill" | "RejectSquareOutline" | "Report" | "ReportCreator" | "Request" | "Right" | "Roles" | "Save" | "Schema" | "Search" | "SetFilter" | "Setting" | "SortHorizontal" | "SquareFill" | "SquareOutline" | "StarInputTitle" | "Status" | "Table" | "TableEdit" | "Tools" | "Up" | "Upload" | "UploadFill" | "User" | "UserSetting" | "UserSettingFill" | "ViewFill" | "ViewOutline" | "ViewReceipt" | "Warning" | "WarningCircleFill" | "WarningCircleOutline" | "WarningSquareFill" | "WarningSquareOutline" | "CameraRotate" | "CameraRotateFill" | "Captcha" | "Home" | "MaximizeSquare" | "MinimizeSquare" | "Restart" | "ChangePicture";
+type IconsName = "AcceptedReceipt" | "Actions" | "Add" | "AddCircleFill" | "AddCircleOutline" | "AddColumn" | "AddDocument" | "AddDocumentPocket" | "AddForms" | "AddRow" | "AddSquareFill" | "AddSquareOutline" | "ArrowDownBig" | "ArrowDownFill" | "ArrowDownSmall" | "ArrowLeftBig" | "ArrowLeftFill" | "ArrowLeftSmall" | "ArrowRightBig" | "ArrowRightFill" | "ArrowRightSmall" | "ArrowUpBig" | "ArrowUpFill" | "ArrowUpSmall" | "Attachment" | "BackSingleColor" | "BasicInfo" | "BellFill" | "BellOutline" | "Calculator" | "CalculatorMinimalistic" | "Calendar" | "Calling" | "Card" | "Card2" | "CardReceive" | "CardSearch" | "CardSend" | "CardTransfer" | "ChangeLogo" | "Chat" | "Check" | "CheckCircleFill" | "CheckCircleOutline" | "Checklist" | "CheckSquareFill" | "CheckSquareOutline" | "CircleFill" | "CircleOutline" | "ClockCircle" | "ClockDark" | "ClockSquare" | "Close" | "CloseCircleFill" | "CloseCircleOutline" | "CloseSquareFill" | "CloseSquareOutline" | "Coding" | "Companies" | "Copy" | "CopyRow" | "Dashboard" | "DateTime" | "Delete" | "DeleteFill" | "DeleteRow" | "Description" | "DescriptionFill" | "DescriptionOutline" | "Direction" | "DollarCircle" | "DollarCircleCancel" | "DollarCircleChart" | "DollarCircleExpensive" | "DollarCircleIncome" | "DollarCircleTransfer" | "DollarSquare" | "DollarSquareCancel" | "DollarSquareChart" | "DollarSquareExpensive" | "DollarSquareIncome" | "DollarSquareTransfer" | "DoubleAltArrowDown" | "DoubleAltArrowLeft" | "DoubleAltArrowRight" | "DoubleAltArrowUp" | "Down" | "Download" | "DownloadFill" | "EditFill" | "EditOutline" | "EditProfile" | "EndDocument" | "EndDocumentFill" | "Enter" | "EnterFill" | "Entity" | "Exit" | "ExportDOC" | "ExportJPG" | "ExportPDF" | "ExportXLS" | "ExportZIP" | "EyeClosed" | "FavoriteDeselect" | "FavoriteSelected" | "Filter" | "FilterFill" | "FilterTable" | "ForwardSingleColor" | "GroupAction" | "HalfArrowLeft" | "HalfArrowRight" | "HandMoney" | "History" | "Image" | "Info" | "InfoCircleFill" | "InfoCircleOutline" | "InfoSquareFill" | "InfoSquareOutline" | "Left" | "Levels" | "Library" | "LikeMoney" | "Lock" | "Management" | "Menu" | "MenuHamburger" | "MenuHorizontalDots" | "MenuVerticalDots" | "MoneyBag" | "NextDocument" | "Password" | "Payable" | "PaymentOrder" | "PettyCash" | "Picture" | "Popup" | "PresetFilters" | "PreviousDocument" | "Printer" | "PrinterFill" | "Receipt" | "ReceiptEdit" | "Receivable" | "Reject" | "RejectCircleFill" | "RejectCircleOutline" | "RejectedReceipt" | "RejectedReceiptOutline" | "RejectFill" | "RejectSquareFill" | "RejectSquareOutline" | "Report" | "ReportCreator" | "Request" | "Right" | "Roles" | "Save" | "Schema" | "Search" | "SetFilter" | "Setting" | "SortHorizontal" | "SquareFill" | "SquareOutline" | "StarInputTitle" | "Status" | "Table" | "TableEdit" | "Tools" | "Up" | "Upload" | "UploadFill" | "User" | "UserSetting" | "UserSettingFill" | "ViewFill" | "ViewOutline" | "ViewReceipt" | "Warning" | "WarningCircleFill" | "WarningCircleOutline" | "WarningSquareFill" | "WarningSquareOutline" | "CameraRotate" | "CameraRotateFill" | "Captcha" | "Home" | "MaximizeSquare" | "MinimizeSquare" | "Restart" | "EmptyFolder";
 
 interface IconsProps extends HTMLAttributes<HTMLSpanElement> {
     name: IconsName;
@@ -14,595 +14,595 @@ interface SVGRProps$31 {
     title?: string;
     titleId?: string;
 }
-declare const SvgChangePicture: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$31) => react_jsx_runtime.JSX.Element;
+declare const SvgDollarCircleExpensive: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$31) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$30 {
     title?: string;
     titleId?: string;
 }
-declare const SvgDollarCircleExpensive: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$30) => react_jsx_runtime.JSX.Element;
+declare const SvgDollarSquareExpensive: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$30) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2$ {
     title?: string;
     titleId?: string;
 }
-declare const SvgDollarSquareExpensive: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2$) => react_jsx_runtime.JSX.Element;
+declare const SvgFavoriteDeselect: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2$) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2_ {
     title?: string;
     titleId?: string;
 }
-declare const SvgFavoriteDeselect: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2_) => react_jsx_runtime.JSX.Element;
+declare const SvgMenuHorizontalDots: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2_) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2Z {
     title?: string;
     titleId?: string;
 }
-declare const SvgMenuHorizontalDots: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2Z) => react_jsx_runtime.JSX.Element;
+declare const SvgPicture: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2Z) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2Y {
     title?: string;
     titleId?: string;
 }
-declare const SvgPicture: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2Y) => react_jsx_runtime.JSX.Element;
+declare const SvgAcceptedReceipt: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2Y) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2X {
     title?: string;
     titleId?: string;
 }
-declare const SvgAcceptedReceipt: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2X) => react_jsx_runtime.JSX.Element;
+declare const SvgActions: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2X) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2W {
     title?: string;
     titleId?: string;
 }
-declare const SvgActions: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2W) => react_jsx_runtime.JSX.Element;
+declare const SvgAdd: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2W) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2V {
     title?: string;
     titleId?: string;
 }
-declare const SvgAdd: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2V) => react_jsx_runtime.JSX.Element;
+declare const SvgAddCircleFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2V) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2U {
     title?: string;
     titleId?: string;
 }
-declare const SvgAddCircleFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2U) => react_jsx_runtime.JSX.Element;
+declare const SvgAddCircleOutline: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2U) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2T {
     title?: string;
     titleId?: string;
 }
-declare const SvgAddCircleOutline: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2T) => react_jsx_runtime.JSX.Element;
+declare const SvgAddColumn: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2T) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2S {
     title?: string;
     titleId?: string;
 }
-declare const SvgAddColumn: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2S) => react_jsx_runtime.JSX.Element;
+declare const SvgAddDocument: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2S) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2R {
     title?: string;
     titleId?: string;
 }
-declare const SvgAddDocument: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2R) => react_jsx_runtime.JSX.Element;
+declare const SvgAddDocumentPocket: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2R) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2Q {
     title?: string;
     titleId?: string;
 }
-declare const SvgAddDocumentPocket: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2Q) => react_jsx_runtime.JSX.Element;
+declare const SvgAddForms: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2Q) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2P {
     title?: string;
     titleId?: string;
 }
-declare const SvgAddForms: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2P) => react_jsx_runtime.JSX.Element;
+declare const SvgAddRow: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2P) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2O {
     title?: string;
     titleId?: string;
 }
-declare const SvgAddRow: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2O) => react_jsx_runtime.JSX.Element;
+declare const SvgAddSquareFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2O) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2N {
     title?: string;
     titleId?: string;
 }
-declare const SvgAddSquareFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2N) => react_jsx_runtime.JSX.Element;
+declare const SvgAddSquareOutline: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2N) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2M {
     title?: string;
     titleId?: string;
 }
-declare const SvgAddSquareOutline: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2M) => react_jsx_runtime.JSX.Element;
+declare const SvgArrowDownBig: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2M) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2L {
     title?: string;
     titleId?: string;
 }
-declare const SvgArrowDownBig: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2L) => react_jsx_runtime.JSX.Element;
+declare const SvgArrowDownFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2L) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2K {
     title?: string;
     titleId?: string;
 }
-declare const SvgArrowDownFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2K) => react_jsx_runtime.JSX.Element;
+declare const SvgArrowDownSmall: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2K) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2J {
     title?: string;
     titleId?: string;
 }
-declare const SvgArrowDownSmall: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2J) => react_jsx_runtime.JSX.Element;
+declare const SvgArrowLeftBig: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2J) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2I {
     title?: string;
     titleId?: string;
 }
-declare const SvgArrowLeftBig: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2I) => react_jsx_runtime.JSX.Element;
+declare const SvgArrowLeftFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2I) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2H {
     title?: string;
     titleId?: string;
 }
-declare const SvgArrowLeftFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2H) => react_jsx_runtime.JSX.Element;
+declare const SvgArrowLeftSmall: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2H) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2G {
     title?: string;
     titleId?: string;
 }
-declare const SvgArrowLeftSmall: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2G) => react_jsx_runtime.JSX.Element;
+declare const SvgArrowRightBig: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2G) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2F {
     title?: string;
     titleId?: string;
 }
-declare const SvgArrowRightBig: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2F) => react_jsx_runtime.JSX.Element;
+declare const SvgArrowRightFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2F) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2E {
     title?: string;
     titleId?: string;
 }
-declare const SvgArrowRightFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2E) => react_jsx_runtime.JSX.Element;
+declare const SvgArrowRightSmall: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2E) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2D {
     title?: string;
     titleId?: string;
 }
-declare const SvgArrowRightSmall: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2D) => react_jsx_runtime.JSX.Element;
+declare const SvgArrowUpBig: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2D) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2C {
     title?: string;
     titleId?: string;
 }
-declare const SvgArrowUpBig: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2C) => react_jsx_runtime.JSX.Element;
+declare const SvgArrowUpFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2C) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2B {
     title?: string;
     titleId?: string;
 }
-declare const SvgArrowUpFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2B) => react_jsx_runtime.JSX.Element;
+declare const SvgArrowUpSmall: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2B) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2A {
     title?: string;
     titleId?: string;
 }
-declare const SvgArrowUpSmall: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2A) => react_jsx_runtime.JSX.Element;
+declare const SvgAttachment: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2A) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2z {
     title?: string;
     titleId?: string;
 }
-declare const SvgAttachment: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2z) => react_jsx_runtime.JSX.Element;
+declare const SvgBackSingleColor: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2z) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2y {
     title?: string;
     titleId?: string;
 }
-declare const SvgBackSingleColor: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2y) => react_jsx_runtime.JSX.Element;
+declare const SvgBasicInfo: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2y) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2x {
     title?: string;
     titleId?: string;
 }
-declare const SvgBasicInfo: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2x) => react_jsx_runtime.JSX.Element;
+declare const SvgBellFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2x) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2w {
     title?: string;
     titleId?: string;
 }
-declare const SvgBellFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2w) => react_jsx_runtime.JSX.Element;
+declare const SvgBellOutline: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2w) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2v {
     title?: string;
     titleId?: string;
 }
-declare const SvgBellOutline: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2v) => react_jsx_runtime.JSX.Element;
+declare const SvgCalculator: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2v) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2u {
     title?: string;
     titleId?: string;
 }
-declare const SvgCalculator: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2u) => react_jsx_runtime.JSX.Element;
+declare const SvgCalculatorMinimalistic: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2u) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2t {
     title?: string;
     titleId?: string;
 }
-declare const SvgCalculatorMinimalistic: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2t) => react_jsx_runtime.JSX.Element;
+declare const SvgCalendar: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2t) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2s {
     title?: string;
     titleId?: string;
 }
-declare const SvgCalendar: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2s) => react_jsx_runtime.JSX.Element;
+declare const SvgCalling: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2s) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2r {
     title?: string;
     titleId?: string;
 }
-declare const SvgCalling: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2r) => react_jsx_runtime.JSX.Element;
+declare const SvgCameraRotate: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2r) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2q {
     title?: string;
     titleId?: string;
 }
-declare const SvgCameraRotate: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2q) => react_jsx_runtime.JSX.Element;
+declare const SvgCameraRotateFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2q) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2p {
     title?: string;
     titleId?: string;
 }
-declare const SvgCameraRotateFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2p) => react_jsx_runtime.JSX.Element;
+declare const SvgCaptcha: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2p) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2o {
     title?: string;
     titleId?: string;
 }
-declare const SvgCaptcha: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2o) => react_jsx_runtime.JSX.Element;
+declare const SvgCard: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2o) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2n {
     title?: string;
     titleId?: string;
 }
-declare const SvgCard: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2n) => react_jsx_runtime.JSX.Element;
+declare const SvgCard2: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2n) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2m {
     title?: string;
     titleId?: string;
 }
-declare const SvgCard2: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2m) => react_jsx_runtime.JSX.Element;
+declare const SvgCardReceive: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2m) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2l {
     title?: string;
     titleId?: string;
 }
-declare const SvgCardReceive: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2l) => react_jsx_runtime.JSX.Element;
+declare const SvgCardSearch: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2l) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2k {
     title?: string;
     titleId?: string;
 }
-declare const SvgCardSearch: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2k) => react_jsx_runtime.JSX.Element;
+declare const SvgCardSend: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2k) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2j {
     title?: string;
     titleId?: string;
 }
-declare const SvgCardSend: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2j) => react_jsx_runtime.JSX.Element;
+declare const SvgCardTransfer: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2j) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2i {
     title?: string;
     titleId?: string;
 }
-declare const SvgCardTransfer: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2i) => react_jsx_runtime.JSX.Element;
+declare const SvgChangeLogo: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2i) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2h {
     title?: string;
     titleId?: string;
 }
-declare const SvgChangeLogo: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2h) => react_jsx_runtime.JSX.Element;
+declare const SvgChat: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2h) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2g {
     title?: string;
     titleId?: string;
 }
-declare const SvgChat: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2g) => react_jsx_runtime.JSX.Element;
+declare const SvgCheck: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2g) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2f {
     title?: string;
     titleId?: string;
 }
-declare const SvgCheck: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2f) => react_jsx_runtime.JSX.Element;
+declare const SvgCheckCircleFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2f) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2e {
     title?: string;
     titleId?: string;
 }
-declare const SvgCheckCircleFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2e) => react_jsx_runtime.JSX.Element;
+declare const SvgCheckCircleOutline: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2e) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2d {
     title?: string;
     titleId?: string;
 }
-declare const SvgCheckCircleOutline: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2d) => react_jsx_runtime.JSX.Element;
+declare const SvgCheckSquareFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2d) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2c {
     title?: string;
     titleId?: string;
 }
-declare const SvgCheckSquareFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2c) => react_jsx_runtime.JSX.Element;
+declare const SvgCheckSquareOutline: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2c) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2b {
     title?: string;
     titleId?: string;
 }
-declare const SvgCheckSquareOutline: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2b) => react_jsx_runtime.JSX.Element;
+declare const SvgChecklist: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2b) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$2a {
     title?: string;
     titleId?: string;
 }
-declare const SvgChecklist: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2a) => react_jsx_runtime.JSX.Element;
+declare const SvgCircleFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$2a) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$29 {
     title?: string;
     titleId?: string;
 }
-declare const SvgCircleFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$29) => react_jsx_runtime.JSX.Element;
+declare const SvgCircleOutline: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$29) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$28 {
     title?: string;
     titleId?: string;
 }
-declare const SvgCircleOutline: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$28) => react_jsx_runtime.JSX.Element;
+declare const SvgClockCircle: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$28) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$27 {
     title?: string;
     titleId?: string;
 }
-declare const SvgClockCircle: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$27) => react_jsx_runtime.JSX.Element;
+declare const SvgClockDark: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$27) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$26 {
     title?: string;
     titleId?: string;
 }
-declare const SvgClockDark: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$26) => react_jsx_runtime.JSX.Element;
+declare const SvgClockSquare: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$26) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$25 {
     title?: string;
     titleId?: string;
 }
-declare const SvgClockSquare: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$25) => react_jsx_runtime.JSX.Element;
+declare const SvgClose: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$25) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$24 {
     title?: string;
     titleId?: string;
 }
-declare const SvgClose: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$24) => react_jsx_runtime.JSX.Element;
+declare const SvgCloseCircleFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$24) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$23 {
     title?: string;
     titleId?: string;
 }
-declare const SvgCloseCircleFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$23) => react_jsx_runtime.JSX.Element;
+declare const SvgCloseCircleOutline: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$23) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$22 {
     title?: string;
     titleId?: string;
 }
-declare const SvgCloseCircleOutline: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$22) => react_jsx_runtime.JSX.Element;
+declare const SvgCloseSquareFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$22) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$21 {
     title?: string;
     titleId?: string;
 }
-declare const SvgCloseSquareFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$21) => react_jsx_runtime.JSX.Element;
+declare const SvgCloseSquareOutline: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$21) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$20 {
     title?: string;
     titleId?: string;
 }
-declare const SvgCloseSquareOutline: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$20) => react_jsx_runtime.JSX.Element;
+declare const SvgCoding: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$20) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1$ {
     title?: string;
     titleId?: string;
 }
-declare const SvgCoding: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1$) => react_jsx_runtime.JSX.Element;
+declare const SvgCompanies: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1$) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1_ {
     title?: string;
     titleId?: string;
 }
-declare const SvgCompanies: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1_) => react_jsx_runtime.JSX.Element;
+declare const SvgCopy: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1_) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1Z {
     title?: string;
     titleId?: string;
 }
-declare const SvgCopy: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1Z) => react_jsx_runtime.JSX.Element;
+declare const SvgCopyRow: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1Z) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1Y {
     title?: string;
     titleId?: string;
 }
-declare const SvgCopyRow: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1Y) => react_jsx_runtime.JSX.Element;
+declare const SvgDashboard: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1Y) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1X {
     title?: string;
     titleId?: string;
 }
-declare const SvgDashboard: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1X) => react_jsx_runtime.JSX.Element;
+declare const SvgDateTime: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1X) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1W {
     title?: string;
     titleId?: string;
 }
-declare const SvgDateTime: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1W) => react_jsx_runtime.JSX.Element;
+declare const SvgDelete: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1W) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1V {
     title?: string;
     titleId?: string;
 }
-declare const SvgDelete: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1V) => react_jsx_runtime.JSX.Element;
+declare const SvgDeleteFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1V) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1U {
     title?: string;
     titleId?: string;
 }
-declare const SvgDeleteFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1U) => react_jsx_runtime.JSX.Element;
+declare const SvgDeleteRow: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1U) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1T {
     title?: string;
     titleId?: string;
 }
-declare const SvgDeleteRow: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1T) => react_jsx_runtime.JSX.Element;
+declare const SvgDescription: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1T) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1S {
     title?: string;
     titleId?: string;
 }
-declare const SvgDescription: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1S) => react_jsx_runtime.JSX.Element;
+declare const SvgDescriptionFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1S) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1R {
     title?: string;
     titleId?: string;
 }
-declare const SvgDescriptionFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1R) => react_jsx_runtime.JSX.Element;
+declare const SvgDescriptionOutline: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1R) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1Q {
     title?: string;
     titleId?: string;
 }
-declare const SvgDescriptionOutline: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1Q) => react_jsx_runtime.JSX.Element;
+declare const SvgDirection: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1Q) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1P {
     title?: string;
     titleId?: string;
 }
-declare const SvgDirection: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1P) => react_jsx_runtime.JSX.Element;
+declare const SvgDollarCircle: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1P) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1O {
     title?: string;
     titleId?: string;
 }
-declare const SvgDollarCircle: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1O) => react_jsx_runtime.JSX.Element;
+declare const SvgDollarCircleCancel: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1O) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1N {
     title?: string;
     titleId?: string;
 }
-declare const SvgDollarCircleCancel: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1N) => react_jsx_runtime.JSX.Element;
+declare const SvgDollarCircleChart: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1N) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1M {
     title?: string;
     titleId?: string;
 }
-declare const SvgDollarCircleChart: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1M) => react_jsx_runtime.JSX.Element;
+declare const SvgDollarCircleIncome: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1M) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1L {
     title?: string;
     titleId?: string;
 }
-declare const SvgDollarCircleIncome: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1L) => react_jsx_runtime.JSX.Element;
+declare const SvgDollarCircleTransfer: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1L) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1K {
     title?: string;
     titleId?: string;
 }
-declare const SvgDollarCircleTransfer: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1K) => react_jsx_runtime.JSX.Element;
+declare const SvgDollarSquare: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1K) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1J {
     title?: string;
     titleId?: string;
 }
-declare const SvgDollarSquare: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1J) => react_jsx_runtime.JSX.Element;
+declare const SvgDollarSquareCancel: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1J) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1I {
     title?: string;
     titleId?: string;
 }
-declare const SvgDollarSquareCancel: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1I) => react_jsx_runtime.JSX.Element;
+declare const SvgDollarSquareChart: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1I) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1H {
     title?: string;
     titleId?: string;
 }
-declare const SvgDollarSquareChart: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1H) => react_jsx_runtime.JSX.Element;
+declare const SvgDollarSquareIncome: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1H) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1G {
     title?: string;
     titleId?: string;
 }
-declare const SvgDollarSquareIncome: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1G) => react_jsx_runtime.JSX.Element;
+declare const SvgDollarSquareTransfer: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1G) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1F {
     title?: string;
     titleId?: string;
 }
-declare const SvgDollarSquareTransfer: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1F) => react_jsx_runtime.JSX.Element;
+declare const SvgDoubleAltArrowDown: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1F) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1E {
     title?: string;
     titleId?: string;
 }
-declare const SvgDoubleAltArrowDown: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1E) => react_jsx_runtime.JSX.Element;
+declare const SvgDoubleAltArrowLeft: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1E) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1D {
     title?: string;
     titleId?: string;
 }
-declare const SvgDoubleAltArrowLeft: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1D) => react_jsx_runtime.JSX.Element;
+declare const SvgDoubleAltArrowRight: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1D) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1C {
     title?: string;
     titleId?: string;
 }
-declare const SvgDoubleAltArrowRight: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1C) => react_jsx_runtime.JSX.Element;
+declare const SvgDoubleAltArrowUp: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1C) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1B {
     title?: string;
     titleId?: string;
 }
-declare const SvgDoubleAltArrowUp: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1B) => react_jsx_runtime.JSX.Element;
+declare const SvgDown: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1B) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1A {
     title?: string;
     titleId?: string;
 }
-declare const SvgDown: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1A) => react_jsx_runtime.JSX.Element;
+declare const SvgDownload: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1A) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1z {
     title?: string;
     titleId?: string;
 }
-declare const SvgDownload: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1z) => react_jsx_runtime.JSX.Element;
+declare const SvgDownloadFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1z) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1y {
     title?: string;
     titleId?: string;
 }
-declare const SvgDownloadFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1y) => react_jsx_runtime.JSX.Element;
+declare const SvgEditFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1y) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1x {
     title?: string;
     titleId?: string;
 }
-declare const SvgEditFill: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1x) => react_jsx_runtime.JSX.Element;
+declare const SvgEditOutline: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1x) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1w {
     title?: string;
     titleId?: string;
 }
-declare const SvgEditOutline: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1w) => react_jsx_runtime.JSX.Element;
+declare const SvgEditProfile: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1w) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1v {
     title?: string;
     titleId?: string;
 }
-declare const SvgEditProfile: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1v) => react_jsx_runtime.JSX.Element;
+declare const SvgEmptyFolder: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps$1v) => react_jsx_runtime.JSX.Element;
 
 interface SVGRProps$1u {
     title?: string;
@@ -1174,4 +1174,4 @@ interface SVGRProps {
 }
 declare const SvgWarningSquareOutline: ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps) => react_jsx_runtime.JSX.Element;
 
-export { SvgAcceptedReceipt as AcceptedReceipt, SvgActions as Actions, SvgAdd as Add, SvgAddCircleFill as AddCircleFill, SvgAddCircleOutline as AddCircleOutline, SvgAddColumn as AddColumn, SvgAddDocument as AddDocument, SvgAddDocumentPocket as AddDocumentPocket, SvgAddForms as AddForms, SvgAddRow as AddRow, SvgAddSquareFill as AddSquareFill, SvgAddSquareOutline as AddSquareOutline, SvgArrowDownBig as ArrowDownBig, SvgArrowDownFill as ArrowDownFill, SvgArrowDownSmall as ArrowDownSmall, SvgArrowLeftBig as ArrowLeftBig, SvgArrowLeftFill as ArrowLeftFill, SvgArrowLeftSmall as ArrowLeftSmall, SvgArrowRightBig as ArrowRightBig, SvgArrowRightFill as ArrowRightFill, SvgArrowRightSmall as ArrowRightSmall, SvgArrowUpBig as ArrowUpBig, SvgArrowUpFill as ArrowUpFill, SvgArrowUpSmall as ArrowUpSmall, SvgAttachment as Attachment, SvgBackSingleColor as BackSingleColor, SvgBasicInfo as BasicInfo, SvgBellFill as BellFill, SvgBellOutline as BellOutline, SvgCalculator as Calculator, SvgCalculatorMinimalistic as CalculatorMinimalistic, SvgCalendar as Calendar, SvgCalling as Calling, SvgCameraRotate as CameraRotate, SvgCameraRotateFill as CameraRotateFill, SvgCaptcha as Captcha, SvgCard as Card, SvgCard2 as Card2, SvgCardReceive as CardReceive, SvgCardSearch as CardSearch, SvgCardSend as CardSend, SvgCardTransfer as CardTransfer, SvgChangeLogo as ChangeLogo, SvgChangePicture as ChangePicture, SvgChat as Chat, SvgCheck as Check, SvgCheckCircleFill as CheckCircleFill, SvgCheckCircleOutline as CheckCircleOutline, SvgCheckSquareFill as CheckSquareFill, SvgCheckSquareOutline as CheckSquareOutline, SvgChecklist as Checklist, SvgCircleFill as CircleFill, SvgCircleOutline as CircleOutline, SvgClockCircle as ClockCircle, SvgClockDark as ClockDark, SvgClockSquare as ClockSquare, SvgClose as Close, SvgCloseCircleFill as CloseCircleFill, SvgCloseCircleOutline as CloseCircleOutline, SvgCloseSquareFill as CloseSquareFill, SvgCloseSquareOutline as CloseSquareOutline, SvgCoding as Coding, SvgCompanies as Companies, SvgCopy as Copy, SvgCopyRow as CopyRow, SvgDashboard as Dashboard, SvgDateTime as DateTime, SvgDelete as Delete, SvgDeleteFill as DeleteFill, SvgDeleteRow as DeleteRow, SvgDescription as Description, SvgDescriptionFill as DescriptionFill, SvgDescriptionOutline as DescriptionOutline, SvgDirection as Direction, SvgDollarCircle as DollarCircle, SvgDollarCircleCancel as DollarCircleCancel, SvgDollarCircleChart as DollarCircleChart, SvgDollarCircleExpensive as DollarCircleExpensive, SvgDollarCircleIncome as DollarCircleIncome, SvgDollarCircleTransfer as DollarCircleTransfer, SvgDollarSquare as DollarSquare, SvgDollarSquareCancel as DollarSquareCancel, SvgDollarSquareChart as DollarSquareChart, SvgDollarSquareExpensive as DollarSquareExpensive, SvgDollarSquareIncome as DollarSquareIncome, SvgDollarSquareTransfer as DollarSquareTransfer, SvgDoubleAltArrowDown as DoubleAltArrowDown, SvgDoubleAltArrowLeft as DoubleAltArrowLeft, SvgDoubleAltArrowRight as DoubleAltArrowRight, SvgDoubleAltArrowUp as DoubleAltArrowUp, SvgDown as Down, SvgDownload as Download, SvgDownloadFill as DownloadFill, SvgEditFill as EditFill, SvgEditOutline as EditOutline, SvgEditProfile as EditProfile, SvgEndDocument as EndDocument, SvgEndDocumentFill as EndDocumentFill, SvgEnter as Enter, SvgEnterFill as EnterFill, SvgEntity as Entity, SvgExit as Exit, SvgExportDoc as ExportDoc, SvgExportJpg as ExportJpg, SvgExportPdf as ExportPdf, SvgExportXls as ExportXls, SvgExportZip as ExportZip, SvgEyeClosed as EyeClosed, SvgFavoriteDeselect as FavoriteDeselect, SvgFavoriteSelected as FavoriteSelected, SvgFilter as Filter, SvgFilterFill as FilterFill, SvgFilterTable as FilterTable, SvgForwardSingleColor as ForwardSingleColor, SvgGroupAction as GroupAction, SvgHalfArrowLeft as HalfArrowLeft, SvgHalfArrowRight as HalfArrowRight, SvgHandMoney as HandMoney, SvgHistory as History, SvgHome as Home, SvgImage as Image, SvgInfo as Info, SvgInfoCircleFill as InfoCircleFill, SvgInfoCircleOutline as InfoCircleOutline, SvgInfoSquareFill as InfoSquareFill, SvgInfoSquareOutline as InfoSquareOutline, SvgLeft as Left, SvgLevels as Levels, SvgLibrary as Library, SvgLikeMoney as LikeMoney, SvgLock as Lock, SvgManagement as Management, SvgMaximizeSquare as MaximizeSquare, SvgMenu as Menu, SvgMenuHamburger as MenuHamburger, SvgMenuHorizontalDots as MenuHorizontalDots, SvgMenuVerticalDots as MenuVerticalDots, SvgMinimizeSquare as MinimizeSquare, SvgMoneyBag as MoneyBag, SvgNextDocument as NextDocument, SvgPassword as Password, SvgPayable as Payable, SvgPaymentOrder as PaymentOrder, SvgPettyCash as PettyCash, SvgPicture as Picture, SvgPopup as Popup, SvgPresetFilters as PresetFilters, SvgPreviousDocument as PreviousDocument, SvgPrinter as Printer, SvgPrinterFill as PrinterFill, SvgReceipt as Receipt, SvgReceiptEdit as ReceiptEdit, SvgReceivable as Receivable, SvgReject as Reject, SvgRejectCircleFill as RejectCircleFill, SvgRejectCircleOutline as RejectCircleOutline, SvgRejectFill as RejectFill, SvgRejectSquareFill as RejectSquareFill, SvgRejectSquareOutline as RejectSquareOutline, SvgRejectedReceipt as RejectedReceipt, SvgRejectedReceiptOutline as RejectedReceiptOutline, SvgReport as Report, SvgReportCreator as ReportCreator, SvgRequest as Request, SvgRestart as Restart, SvgRight as Right, SvgRoles as Roles, SvgSave as Save, SvgSchema as Schema, SvgSearch as Search, SvgSetFilter as SetFilter, SvgSetting as Setting, SvgSortHorizontal as SortHorizontal, SvgSquareFill as SquareFill, SvgSquareOutline as SquareOutline, SvgStarInputTitle as StarInputTitle, SvgStatus as Status, SvgTable as Table, SvgTableEdit as TableEdit, SvgTools as Tools, SvgUp as Up, SvgUpload as Upload, SvgUploadFill as UploadFill, SvgUser as User, SvgUserSetting as UserSetting, SvgUserSettingFill as UserSettingFill, SvgViewFill as ViewFill, SvgViewOutline as ViewOutline, SvgViewReceipt as ViewReceipt, SvgWarning as Warning, SvgWarningCircleFill as WarningCircleFill, SvgWarningCircleOutline as WarningCircleOutline, SvgWarningSquareFill as WarningSquareFill, SvgWarningSquareOutline as WarningSquareOutline, Icons as default };
+export { SvgAcceptedReceipt as AcceptedReceipt, SvgActions as Actions, SvgAdd as Add, SvgAddCircleFill as AddCircleFill, SvgAddCircleOutline as AddCircleOutline, SvgAddColumn as AddColumn, SvgAddDocument as AddDocument, SvgAddDocumentPocket as AddDocumentPocket, SvgAddForms as AddForms, SvgAddRow as AddRow, SvgAddSquareFill as AddSquareFill, SvgAddSquareOutline as AddSquareOutline, SvgArrowDownBig as ArrowDownBig, SvgArrowDownFill as ArrowDownFill, SvgArrowDownSmall as ArrowDownSmall, SvgArrowLeftBig as ArrowLeftBig, SvgArrowLeftFill as ArrowLeftFill, SvgArrowLeftSmall as ArrowLeftSmall, SvgArrowRightBig as ArrowRightBig, SvgArrowRightFill as ArrowRightFill, SvgArrowRightSmall as ArrowRightSmall, SvgArrowUpBig as ArrowUpBig, SvgArrowUpFill as ArrowUpFill, SvgArrowUpSmall as ArrowUpSmall, SvgAttachment as Attachment, SvgBackSingleColor as BackSingleColor, SvgBasicInfo as BasicInfo, SvgBellFill as BellFill, SvgBellOutline as BellOutline, SvgCalculator as Calculator, SvgCalculatorMinimalistic as CalculatorMinimalistic, SvgCalendar as Calendar, SvgCalling as Calling, SvgCameraRotate as CameraRotate, SvgCameraRotateFill as CameraRotateFill, SvgCaptcha as Captcha, SvgCard as Card, SvgCard2 as Card2, SvgCardReceive as CardReceive, SvgCardSearch as CardSearch, SvgCardSend as CardSend, SvgCardTransfer as CardTransfer, SvgChangeLogo as ChangeLogo, SvgChat as Chat, SvgCheck as Check, SvgCheckCircleFill as CheckCircleFill, SvgCheckCircleOutline as CheckCircleOutline, SvgCheckSquareFill as CheckSquareFill, SvgCheckSquareOutline as CheckSquareOutline, SvgChecklist as Checklist, SvgCircleFill as CircleFill, SvgCircleOutline as CircleOutline, SvgClockCircle as ClockCircle, SvgClockDark as ClockDark, SvgClockSquare as ClockSquare, SvgClose as Close, SvgCloseCircleFill as CloseCircleFill, SvgCloseCircleOutline as CloseCircleOutline, SvgCloseSquareFill as CloseSquareFill, SvgCloseSquareOutline as CloseSquareOutline, SvgCoding as Coding, SvgCompanies as Companies, SvgCopy as Copy, SvgCopyRow as CopyRow, SvgDashboard as Dashboard, SvgDateTime as DateTime, SvgDelete as Delete, SvgDeleteFill as DeleteFill, SvgDeleteRow as DeleteRow, SvgDescription as Description, SvgDescriptionFill as DescriptionFill, SvgDescriptionOutline as DescriptionOutline, SvgDirection as Direction, SvgDollarCircle as DollarCircle, SvgDollarCircleCancel as DollarCircleCancel, SvgDollarCircleChart as DollarCircleChart, SvgDollarCircleExpensive as DollarCircleExpensive, SvgDollarCircleIncome as DollarCircleIncome, SvgDollarCircleTransfer as DollarCircleTransfer, SvgDollarSquare as DollarSquare, SvgDollarSquareCancel as DollarSquareCancel, SvgDollarSquareChart as DollarSquareChart, SvgDollarSquareExpensive as DollarSquareExpensive, SvgDollarSquareIncome as DollarSquareIncome, SvgDollarSquareTransfer as DollarSquareTransfer, SvgDoubleAltArrowDown as DoubleAltArrowDown, SvgDoubleAltArrowLeft as DoubleAltArrowLeft, SvgDoubleAltArrowRight as DoubleAltArrowRight, SvgDoubleAltArrowUp as DoubleAltArrowUp, SvgDown as Down, SvgDownload as Download, SvgDownloadFill as DownloadFill, SvgEditFill as EditFill, SvgEditOutline as EditOutline, SvgEditProfile as EditProfile, SvgEmptyFolder as EmptyFolder, SvgEndDocument as EndDocument, SvgEndDocumentFill as EndDocumentFill, SvgEnter as Enter, SvgEnterFill as EnterFill, SvgEntity as Entity, SvgExit as Exit, SvgExportDoc as ExportDoc, SvgExportJpg as ExportJpg, SvgExportPdf as ExportPdf, SvgExportXls as ExportXls, SvgExportZip as ExportZip, SvgEyeClosed as EyeClosed, SvgFavoriteDeselect as FavoriteDeselect, SvgFavoriteSelected as FavoriteSelected, SvgFilter as Filter, SvgFilterFill as FilterFill, SvgFilterTable as FilterTable, SvgForwardSingleColor as ForwardSingleColor, SvgGroupAction as GroupAction, SvgHalfArrowLeft as HalfArrowLeft, SvgHalfArrowRight as HalfArrowRight, SvgHandMoney as HandMoney, SvgHistory as History, SvgHome as Home, SvgImage as Image, SvgInfo as Info, SvgInfoCircleFill as InfoCircleFill, SvgInfoCircleOutline as InfoCircleOutline, SvgInfoSquareFill as InfoSquareFill, SvgInfoSquareOutline as InfoSquareOutline, SvgLeft as Left, SvgLevels as Levels, SvgLibrary as Library, SvgLikeMoney as LikeMoney, SvgLock as Lock, SvgManagement as Management, SvgMaximizeSquare as MaximizeSquare, SvgMenu as Menu, SvgMenuHamburger as MenuHamburger, SvgMenuHorizontalDots as MenuHorizontalDots, SvgMenuVerticalDots as MenuVerticalDots, SvgMinimizeSquare as MinimizeSquare, SvgMoneyBag as MoneyBag, SvgNextDocument as NextDocument, SvgPassword as Password, SvgPayable as Payable, SvgPaymentOrder as PaymentOrder, SvgPettyCash as PettyCash, SvgPicture as Picture, SvgPopup as Popup, SvgPresetFilters as PresetFilters, SvgPreviousDocument as PreviousDocument, SvgPrinter as Printer, SvgPrinterFill as PrinterFill, SvgReceipt as Receipt, SvgReceiptEdit as ReceiptEdit, SvgReceivable as Receivable, SvgReject as Reject, SvgRejectCircleFill as RejectCircleFill, SvgRejectCircleOutline as RejectCircleOutline, SvgRejectFill as RejectFill, SvgRejectSquareFill as RejectSquareFill, SvgRejectSquareOutline as RejectSquareOutline, SvgRejectedReceipt as RejectedReceipt, SvgRejectedReceiptOutline as RejectedReceiptOutline, SvgReport as Report, SvgReportCreator as ReportCreator, SvgRequest as Request, SvgRestart as Restart, SvgRight as Right, SvgRoles as Roles, SvgSave as Save, SvgSchema as Schema, SvgSearch as Search, SvgSetFilter as SetFilter, SvgSetting as Setting, SvgSortHorizontal as SortHorizontal, SvgSquareFill as SquareFill, SvgSquareOutline as SquareOutline, SvgStarInputTitle as StarInputTitle, SvgStatus as Status, SvgTable as Table, SvgTableEdit as TableEdit, SvgTools as Tools, SvgUp as Up, SvgUpload as Upload, SvgUploadFill as UploadFill, SvgUser as User, SvgUserSetting as UserSetting, SvgUserSettingFill as UserSettingFill, SvgViewFill as ViewFill, SvgViewOutline as ViewOutline, SvgViewReceipt as ViewReceipt, SvgWarning as Warning, SvgWarningCircleFill as WarningCircleFill, SvgWarningCircleOutline as WarningCircleOutline, SvgWarningSquareFill as WarningSquareFill, SvgWarningSquareOutline as WarningSquareOutline, Icons as default };

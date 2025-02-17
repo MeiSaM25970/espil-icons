@@ -1,4 +1,3 @@
-export { default as ChangePicture } from "./ChangePicture";
 export { default as DollarCircleExpensive } from "./DollarCircleExpensive";
 export { default as DollarSquareExpensive } from "./DollarSquareExpensive";
 export { default as FavoriteDeselect } from "./FavoriteDeselect";
@@ -97,6 +96,7 @@ export { default as DownloadFill } from "./DownloadFill";
 export { default as EditFill } from "./EditFill";
 export { default as EditOutline } from "./EditOutline";
 export { default as EditProfile } from "./EditProfile";
+export { default as EmptyFolder } from "./EmptyFolder";
 export { default as EndDocument } from "./EndDocument";
 export { default as EndDocumentFill } from "./EndDocumentFill";
 export { default as Enter } from "./Enter";
