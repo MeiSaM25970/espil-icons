@@ -192,4 +192,4 @@ export type IconsName =
   | "MaximizeSquare"
   | "MinimizeSquare"
   | "Restart"
-  | "ChangePicture";
+  | "EmptyFolder";
