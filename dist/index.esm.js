@@ -18,148 +18,75 @@ PERFORMANCE OF THIS SOFTWARE.
 ***************************************************************************** */
 /* global Reflect, Promise, SuppressedError, Symbol, Iterator */
 
-var __assign = function () {
-  __assign = Object.assign || function __assign(t) {
-    for (var s, i = 1, n = arguments.length; i < n; i++) {
-      s = arguments[i];
-      for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-    }
-    return t;
-  };
-  return __assign.apply(this, arguments);
+
+var __assign = function() {
+    __assign = Object.assign || function __assign(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
 };
+
 function __rest(s, e) {
-  var t = {};
-  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
-  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
-  }
-  return t;
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
 }
+
 function __awaiter(thisArg, _arguments, P, generator) {
-  function adopt(value) {
-    return value instanceof P ? value : new P(function (resolve) {
-      resolve(value);
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
-  }
-  return new (P || (P = Promise))(function (resolve, reject) {
-    function fulfilled(value) {
-      try {
-        step(generator.next(value));
-      } catch (e) {
-        reject(e);
-      }
-    }
-    function rejected(value) {
-      try {
-        step(generator["throw"](value));
-      } catch (e) {
-        reject(e);
-      }
-    }
-    function step(result) {
-      result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
-    }
-    step((generator = generator.apply(thisArg, _arguments || [])).next());
-  });
 }
+
 function __generator(thisArg, body) {
-  var _ = {
-      label: 0,
-      sent: function () {
-        if (t[0] & 1) throw t[1];
-        return t[1];
-      },
-      trys: [],
-      ops: []
-    },
-    f,
-    y,
-    t,
-    g = Object.create((typeof Iterator === "function" ? Iterator : Object).prototype);
-  return g.next = verb(0), g["throw"] = verb(1), g["return"] = verb(2), typeof Symbol === "function" && (g[Symbol.iterator] = function () {
-    return this;
-  }), g;
-  function verb(n) {
-    return function (v) {
-      return step([n, v]);
-    };
-  }
-  function step(op) {
-    if (f) throw new TypeError("Generator is already executing.");
-    while (g && (g = 0, op[0] && (_ = 0)), _) try {
-      if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-      if (y = 0, t) op = [op[0] & 2, t.value];
-      switch (op[0]) {
-        case 0:
-        case 1:
-          t = op;
-          break;
-        case 4:
-          _.label++;
-          return {
-            value: op[1],
-            done: false
-          };
-        case 5:
-          _.label++;
-          y = op[1];
-          op = [0];
-          continue;
-        case 7:
-          op = _.ops.pop();
-          _.trys.pop();
-          continue;
-        default:
-          if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) {
-            _ = 0;
-            continue;
-          }
-          if (op[0] === 3 && (!t || op[1] > t[0] && op[1] < t[3])) {
-            _.label = op[1];
-            break;
-          }
-          if (op[0] === 6 && _.label < t[1]) {
-            _.label = t[1];
-            t = op;
-            break;
-          }
-          if (t && _.label < t[2]) {
-            _.label = t[2];
-            _.ops.push(op);
-            break;
-          }
-          if (t[2]) _.ops.pop();
-          _.trys.pop();
-          continue;
-      }
-      op = body.call(thisArg, _);
-    } catch (e) {
-      op = [6, e];
-      y = 0;
-    } finally {
-      f = t = 0;
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g = Object.create((typeof Iterator === "function" ? Iterator : Object).prototype);
+    return g.next = verb(0), g["throw"] = verb(1), g["return"] = verb(2), typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (g && (g = 0, op[0] && (_ = 0)), _) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
-    if (op[0] & 5) throw op[1];
-    return {
-      value: op[0] ? op[1] : void 0,
-      done: true
-    };
-  }
 }
+
 function __makeTemplateObject(cooked, raw) {
-  if (Object.defineProperty) {
-    Object.defineProperty(cooked, "raw", {
-      value: raw
-    });
-  } else {
-    cooked.raw = raw;
-  }
-  return cooked;
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
 }
 typeof SuppressedError === "function" ? SuppressedError : function (error, suppressed, message) {
-  var e = new Error(message);
-  return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
+    var e = new Error(message);
+    return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
 };
 
 var SvgDollarCircleExpensive = function (_a) {
@@ -245,6 +172,11 @@ var SvgAddSquareFill = function (_a) {
 var SvgAddSquareOutline = function (_a) {
     var title = _a.title, titleId = _a.titleId, props = __rest(_a, ["title", "titleId"]);
     return (jsxs("svg", __assign({ xmlns: "http://www.w3.org/2000/svg", width: "1em", height: "1em", fill: "none", viewBox: "0 0 24 24", "aria-labelledby": titleId }, props, { children: [title ? jsx("title", { id: titleId, children: title }) : null, jsx("path", { fill: "currentColor", d: "M8.83 1.274c1.487-.036 2.974-.02 4.461-.023 1.409.01 2.823.007 4.224.18 1.038.132 2.096.393 2.962 1.007.803.559 1.394 1.391 1.707 2.314.408 1.19.48 2.462.53 3.71.052 1.599.03 3.199.036 4.798-.01 1.361-.008 2.726-.16 4.08-.115.993-.33 2.001-.852 2.867a4.54 4.54 0 0 1-2.061 1.807c-.99.437-2.077.572-3.146.65-1.597.104-3.199.081-4.799.085-1.519-.003-3.04.013-4.556-.107-1.037-.09-2.091-.25-3.035-.713a4.53 4.53 0 0 1-2.09-2.112c-.473-.986-.622-2.088-.707-3.169a41 41 0 0 1-.089-2.637c-.008-1.24-.005-2.481-.002-3.722.006-.9.017-1.802.074-2.701.045-.674.113-1.348.258-2.009.132-.603.331-1.196.644-1.73a4.5 4.5 0 0 1 1.752-1.695c.605-.328 1.274-.518 1.948-.639.957-.169 1.932-.213 2.902-.241m.03 1.5c-.635.017-1.27.044-1.9.111-.558.06-1.115.148-1.648.325a3.35 3.35 0 0 0-1.161.64c-.305.262-.553.589-.732.95-.225.456-.352.955-.438 1.455a16 16 0 0 0-.183 1.903c-.04.91-.044 1.82-.047 2.73.001 1.152-.005 2.303.008 3.454.012.84.03 1.682.108 2.52.05.524.122 1.047.26 1.555a3.8 3.8 0 0 0 .527 1.18c.284.412.676.749 1.124.973.512.257 1.077.388 1.64.475.794.12 1.597.157 2.399.18 1.46.036 2.921.02 4.382.024 1.333-.01 2.67-.003 3.996-.151.62-.075 1.243-.187 1.82-.432.447-.19.853-.477 1.165-.85.331-.39.543-.868.68-1.357.166-.591.24-1.202.292-1.812.104-1.356.093-2.718.097-4.077-.004-1.54.018-3.082-.058-4.62-.037-.673-.093-1.348-.232-2.009-.107-.498-.265-.993-.54-1.427a3 3 0 0 0-1.14-1.054c-.472-.25-.994-.384-1.516-.476a16 16 0 0 0-1.982-.189 70 70 0 0 0-2.671-.044c-1.417.003-2.834-.011-4.25.023" }), jsx("path", { fill: "currentColor", d: "M11.518 8.426a.75.75 0 0 1 .82-.096.75.75 0 0 1 .411.669v2.25L15 11.25a.752.752 0 0 1 .669 1.089.75.75 0 0 1-.67.41h-2.25V15a.748.748 0 0 1-1.47.21c-.039-.127-.028-.26-.03-.391V12.75H9a.751.751 0 0 1-.003-1.5h2.253V8.998a.75.75 0 0 1 .268-.572", opacity: 0.5 })] })));
+};
+
+var SvgArchive = function (_a) {
+    var title = _a.title, titleId = _a.titleId, props = __rest(_a, ["title", "titleId"]);
+    return (jsxs("svg", __assign({ xmlns: "http://www.w3.org/2000/svg", width: "1em", height: "1em", fill: "none", viewBox: "0 0 24 25", "aria-labelledby": titleId }, props, { children: [title ? jsx("title", { id: titleId, children: title }) : null, jsx("path", { fill: "currentColor", d: "M2.43 2.87c.43-.125.882-.115 1.325-.12H19.57c.518.004 1.037-.018 1.553.034.395.04.797.172 1.085.455.289.27.44.655.49 1.041.061.477.042.959.046 1.438-.005.444.006.897-.115 1.328a1.54 1.54 0 0 1-.587.85c-.237.17-.522.26-.808.303-.494.065-.992.044-1.488.049H4.248c-.5-.005-1.002.018-1.5-.051-.363-.052-.724-.195-.985-.461-.255-.25-.4-.593-.455-.941-.062-.378-.056-.762-.059-1.143.001-.33-.003-.662.013-.992.018-.394.078-.803.295-1.142.197-.315.517-.545.873-.647m.582 1.407c-.064.014-.139.011-.192.052-.04.098-.045.206-.055.31-.024.42-.014.84-.015 1.26.008.26-.006.527.07.779.201.062.415.06.623.067.54.007 1.079.002 1.618.003H20.11c.294-.003.588.005.88-.03.062-.01.128-.014.184-.047.037-.095.044-.199.053-.3.021-.292.015-.585.018-.877-.003-.293.003-.587-.018-.88-.011-.098-.016-.2-.057-.293-.073-.031-.154-.039-.232-.049-.246-.024-.492-.021-.739-.023H3.825c-.27.002-.542-.003-.812.028M13.937 10.996a.75.75 0 0 1 1.126.99l-3.586 4.016a.75.75 0 0 1-.89.162c-.159-.074-.262-.22-.377-.344q-.648-.726-1.295-1.452a.753.753 0 0 1 .079-1.028.753.753 0 0 1 1.035.027q.449.501.896 1.002z" }), jsx("path", { fill: "currentColor", d: "M2.749 8.197c.496.069 1 .046 1.5.05v4.444c.001 1.072-.007 2.144.016 3.216.015.593.039 1.187.11 1.777.053.416.128.833.274 1.228.11.297.27.579.486.812.227.25.513.441.824.57.43.181.893.265 1.354.323.812.097 1.632.11 2.449.121.802.008 1.604.005 2.406.006.835 0 1.67.002 2.504-.012.61-.012 1.22-.031 1.828-.094a6.6 6.6 0 0 0 1.208-.226c.327-.1.644-.246.91-.463.255-.206.463-.47.607-.764.187-.379.284-.794.351-1.21.086-.55.119-1.106.14-1.662.027-.787.026-1.575.028-2.363V8.248c.497-.005.995.016 1.489-.049.024.16.004.325.01.488v5.31c-.004 1.117.004 2.237-.085 3.352-.071.834-.2 1.681-.561 2.444a3.76 3.76 0 0 1-1.59 1.694c-.731.403-1.567.561-2.389.646-1.142.111-2.29.104-3.436.11-1.373-.004-2.745.011-4.117-.016-.838-.022-1.681-.058-2.508-.209-.671-.124-1.337-.342-1.901-.735A3.8 3.8 0 0 1 3.3 19.58c-.343-.842-.44-1.758-.497-2.659-.062-1.116-.052-2.234-.055-3.352z", opacity: 0.5 })] })));
 };
 
 var SvgArrowDownBig = function (_a) {
@@ -1062,6 +994,11 @@ var SvgTools = function (_a) {
     return (jsxs("svg", __assign({ xmlns: "http://www.w3.org/2000/svg", width: "1em", height: "1em", fill: "none", viewBox: "0 0 24 24", "aria-labelledby": titleId }, props, { children: [title ? jsx("title", { id: titleId, children: title }) : null, jsx("path", { fill: "currentColor", d: "M4.338 2.367c1.127-.207 2.29-.117 3.432-.11 1.488-.062 2.918 1.213 2.957 2.713a31 31 0 0 1 0 3.065c-.055 1.395-1.3 2.653-2.7 2.692a30 30 0 0 1-3.054 0c-1.4-.052-2.665-1.3-2.7-2.707-.05-1.018-.053-2.04.002-3.058.04-1.187.95-2.245 2.063-2.595m.457 1.445c-.51.163-1.015.613-1.012 1.188-.058 1.062-.095 2.135.027 3.195.16.51.602 1.022 1.175 1.022 1.07.055 2.15.098 3.218-.03.507-.16 1.017-.607 1.015-1.18.057-1.067.095-2.147-.028-3.21-.165-.5-.6-1.007-1.165-1.012-1.075-.06-2.16-.1-3.23.027M15.338 13.368c1.124-.208 2.284-.118 3.422-.11 1.492-.068 2.925 1.207 2.967 2.712.05 1.015.053 2.035 0 3.05-.047 1.398-1.292 2.665-2.695 2.707-1.017.05-2.035.053-3.05 0-1.402-.047-2.672-1.294-2.71-2.702a30 30 0 0 1 0-3.032c.03-1.2.943-2.273 2.066-2.626m.467 1.442c-.51.16-1.02.607-1.02 1.18-.06 1.065-.098 2.143.025 3.205.157.512.607 1.025 1.185 1.023 1.068.057 2.145.095 3.21-.03.503-.16 1.01-.6 1.01-1.168.06-1.067.098-2.148-.025-3.21-.158-.513-.605-1.025-1.178-1.027-1.067-.058-2.145-.095-3.207.027" }), jsx("path", { fill: "currentColor", d: "M17.103 2.38c.37-.297.97-.072 1.08.377.445 1.128 1.154 2.256 2.337 2.708.45.265 1.215.388 1.23 1.035.005.66-.79.74-1.225 1.02-1.172.47-1.885 1.57-2.322 2.7-.12.522-.898.742-1.22.29-.433-.73-.663-1.6-1.318-2.177-.547-.618-1.355-.858-2.057-1.24-.478-.203-.47-1.003.01-1.19.755-.398 1.607-.675 2.167-1.358.645-.587.76-1.532 1.317-2.165M15.8 6.513A7.2 7.2 0 0 1 17.515 8.2a7.8 7.8 0 0 1 1.688-1.715 7.2 7.2 0 0 1-1.708-1.695A7.1 7.1 0 0 1 15.8 6.513M4.335 13.368c1.13-.213 2.293-.108 3.438-.11 1.492-.063 2.92 1.222 2.957 2.725q.068 1.531-.003 3.062c-.05 1.182-.95 2.232-2.06 2.585-1.13.215-2.294.11-3.437.113-1.025.035-2.01-.535-2.543-1.398-.714-1.15-.36-2.585-.44-3.862-.122-1.366.778-2.716 2.088-3.116m.485 1.435c-.875.204-1.185 1.132-1.075 1.94.09 1.137-.395 2.717.832 3.395 1.05.21 2.143.107 3.21.102.673.018 1.408-.515 1.43-1.22.048-1.067.095-2.148-.022-3.213-.165-.507-.605-1.027-1.183-1.027-1.062-.047-2.132-.09-3.192.023", opacity: 0.5 })] })));
 };
 
+var SvgUnarchive = function (_a) {
+    var title = _a.title, titleId = _a.titleId, props = __rest(_a, ["title", "titleId"]);
+    return (jsxs("svg", __assign({ xmlns: "http://www.w3.org/2000/svg", width: "1em", height: "1em", fill: "none", viewBox: "0 0 24 25", "aria-labelledby": titleId }, props, { children: [title ? jsx("title", { id: titleId, children: title }) : null, jsx("path", { fill: "currentColor", d: "M2.564 2.835c.465-.101.944-.081 1.417-.086h15.656c.501.005 1.004-.016 1.504.037.378.041.76.167 1.043.431.278.25.439.607.498.973.077.468.057.944.061 1.416-.004.439.01.883-.083 1.315-.074.348-.253.68-.53.906-.252.213-.573.324-.895.372-.388.053-.781.047-1.172.049H3.847c-.367-.003-.735.002-1.098-.051-.37-.052-.737-.2-.999-.473-.26-.262-.4-.622-.45-.984-.054-.368-.048-.74-.05-1.111 0-.368-.006-.737.02-1.104.026-.387.113-.786.351-1.1a1.58 1.58 0 0 1 .943-.59m.313 1.467c-.089.008-.078.118-.096.182-.05.462-.027.928-.03 1.392.007.267-.01.542.07.801.127.043.262.052.396.06.382.017.765.01 1.148.011h15.834c.293-.005.588.007.878-.044.04-.012.103-.013.108-.066.054-.212.05-.434.056-.651a37 37 0 0 0-.003-1.145c-.008-.176-.01-.354-.066-.523-.257-.076-.53-.061-.794-.069-4.881-.003-9.762 0-14.643-.001-.749.001-1.498-.003-2.247.002-.204.006-.411.005-.611.051M9.29 11.276a.75.75 0 0 1 .745.197l1.96 1.96q.922-.918 1.843-1.84c.09-.09.176-.189.29-.25a.752.752 0 0 1 1.118.65.79.79 0 0 1-.291.604q-.949.95-1.899 1.897l1.804 1.804c.127.13.274.251.336.428a.75.75 0 0 1-.245.865.75.75 0 0 1-.77.084c-.17-.074-.283-.227-.415-.35l-1.77-1.77-1.878 1.878c-.072.072-.14.149-.229.201a.752.752 0 0 1-1.14-.578.75.75 0 0 1 .219-.593q.983-.984 1.967-1.969l-1.973-1.972a.75.75 0 0 1 .327-1.246" }), jsx("path", { fill: "currentColor", d: "M2.75 8.197c.362.053.73.048 1.097.05h16.216c.39-.001.784.005 1.172-.048.013.065.009.131.009.198v4.835c-.004 1.221.011 2.444-.055 3.664-.055.9-.15 1.817-.488 2.662a3.8 3.8 0 0 1-1.307 1.685c-.658.477-1.46.707-2.255.825-1.027.15-2.068.16-3.104.172q-2.113.009-4.227-.002c-.833-.01-1.667-.025-2.497-.111-.728-.08-1.464-.218-2.129-.538a3.76 3.76 0 0 1-1.578-1.412c-.427-.688-.614-1.493-.714-2.288-.125-1.037-.13-2.085-.14-3.128-.003-2.188 0-4.376 0-6.564m6.54 3.079a.752.752 0 0 0-.328 1.246l1.973 1.972q-.983.986-1.968 1.97a.751.751 0 0 0 .922 1.17c.088-.052.158-.13.23-.2l1.877-1.879 1.77 1.77c.132.123.244.276.415.35a.75.75 0 0 0 .77-.084.75.75 0 0 0 .245-.865c-.062-.177-.209-.299-.336-.428l-1.804-1.804q.95-.948 1.899-1.897a.79.79 0 0 0 .29-.604.752.752 0 0 0-1.118-.65c-.113.061-.199.16-.29.25q-.92.921-1.842 1.84l-1.96-1.96a.75.75 0 0 0-.746-.197", opacity: 0.4 })] })));
+};
+
 var SvgUp = function (_a) {
     var title = _a.title, titleId = _a.titleId, props = __rest(_a, ["title", "titleId"]);
     return (jsxs("svg", __assign({ xmlns: "http://www.w3.org/2000/svg", width: "1em", height: "1em", fill: "none", viewBox: "0 0 24 24", "aria-labelledby": titleId }, props, { children: [title ? jsx("title", { id: titleId, children: title }) : null, jsx("path", { fill: "currentColor", d: "M11.487 3.45a.753.753 0 0 1 1.036.014l6.015 6.014a.75.75 0 1 1-1.09 1.033c-1.56-1.564-3.127-3.12-4.683-4.688-.263-.245-.503-.515-.77-.755-.26.247-.504.51-.766.756-1.504 1.518-3.021 3.024-4.53 4.537-.113.108-.214.235-.358.304a.748.748 0 0 1-.897-1.172z" }), jsx("path", { fill: "currentColor", d: "M11.234 5.826c.262-.245.506-.51.767-.756.266.24.507.51.77.755l-.018.051v14.135a.75.75 0 0 1-1.5-.002V5.876z", opacity: 0.5 })] })));
@@ -1146,6 +1083,7 @@ var icons = /*#__PURE__*/Object.freeze({
     AddRow: SvgAddRow,
     AddSquareFill: SvgAddSquareFill,
     AddSquareOutline: SvgAddSquareOutline,
+    Archive: SvgArchive,
     ArrowDownBig: SvgArrowDownBig,
     ArrowDownFill: SvgArrowDownFill,
     ArrowDownSmall: SvgArrowDownSmall,
@@ -1314,6 +1252,7 @@ var icons = /*#__PURE__*/Object.freeze({
     Table: SvgTable,
     TableEdit: SvgTableEdit,
     Tools: SvgTools,
+    Unarchive: SvgUnarchive,
     Up: SvgUp,
     Upload: SvgUpload,
     UploadFill: SvgUploadFill,
@@ -1364,4 +1303,5 @@ var IconStyle = styled.span(templateObject_1 || (templateObject_1 = __makeTempla
 });
 var templateObject_1;
 
-export { SvgAcceptedReceipt as AcceptedReceipt, SvgActions as Actions, SvgAdd as Add, SvgAddCircleFill as AddCircleFill, SvgAddCircleOutline as AddCircleOutline, SvgAddColumn as AddColumn, SvgAddDocument as AddDocument, SvgAddDocumentPocket as AddDocumentPocket, SvgAddForms as AddForms, SvgAddRow as AddRow, SvgAddSquareFill as AddSquareFill, SvgAddSquareOutline as AddSquareOutline, SvgArrowDownBig as ArrowDownBig, SvgArrowDownFill as ArrowDownFill, SvgArrowDownSmall as ArrowDownSmall, SvgArrowLeftBig as ArrowLeftBig, SvgArrowLeftFill as ArrowLeftFill, SvgArrowLeftSmall as ArrowLeftSmall, SvgArrowRightBig as ArrowRightBig, SvgArrowRightFill as ArrowRightFill, SvgArrowRightSmall as ArrowRightSmall, SvgArrowUpBig as ArrowUpBig, SvgArrowUpFill as ArrowUpFill, SvgArrowUpSmall as ArrowUpSmall, SvgAttachment as Attachment, SvgBackSingleColor as BackSingleColor, SvgBasicInfo as BasicInfo, SvgBellFill as BellFill, SvgBellOutline as BellOutline, SvgCalculator as Calculator, SvgCalculatorMinimalistic as CalculatorMinimalistic, SvgCalendar as Calendar, SvgCalling as Calling, SvgCameraRotate as CameraRotate, SvgCameraRotateFill as CameraRotateFill, SvgCaptcha as Captcha, SvgCard as Card, SvgCard2 as Card2, SvgCardReceive as CardReceive, SvgCardSearch as CardSearch, SvgCardSend as CardSend, SvgCardTransfer as CardTransfer, SvgChangeLogo as ChangeLogo, SvgChat as Chat, SvgCheck as Check, SvgCheckCircleFill as CheckCircleFill, SvgCheckCircleOutline as CheckCircleOutline, SvgCheckSquareFill as CheckSquareFill, SvgCheckSquareOutline as CheckSquareOutline, SvgChecklist as Checklist, SvgCircleFill as CircleFill, SvgCircleOutline as CircleOutline, SvgClockCircle as ClockCircle, SvgClockDark as ClockDark, SvgClockSquare as ClockSquare, SvgClose as Close, SvgCloseCircleFill as CloseCircleFill, SvgCloseCircleOutline as CloseCircleOutline, SvgCloseSquareFill as CloseSquareFill, SvgCloseSquareOutline as CloseSquareOutline, SvgCoding as Coding, SvgCompanies as Companies, SvgCopy as Copy, SvgCopyRow as CopyRow, SvgDashboard as Dashboard, SvgDateTime as DateTime, SvgDelete as Delete, SvgDeleteFill as DeleteFill, SvgDeleteRow as DeleteRow, SvgDescription as Description, SvgDescriptionFill as DescriptionFill, SvgDescriptionOutline as DescriptionOutline, SvgDirection as Direction, SvgDollarCircle as DollarCircle, SvgDollarCircleCancel as DollarCircleCancel, SvgDollarCircleChart as DollarCircleChart, SvgDollarCircleExpensive as DollarCircleExpensive, SvgDollarCircleIncome as DollarCircleIncome, SvgDollarCircleTransfer as DollarCircleTransfer, SvgDollarSquare as DollarSquare, SvgDollarSquareCancel as DollarSquareCancel, SvgDollarSquareChart as DollarSquareChart, SvgDollarSquareExpensive as DollarSquareExpensive, SvgDollarSquareIncome as DollarSquareIncome, SvgDollarSquareTransfer as DollarSquareTransfer, SvgDoubleAltArrowDown as DoubleAltArrowDown, SvgDoubleAltArrowLeft as DoubleAltArrowLeft, SvgDoubleAltArrowRight as DoubleAltArrowRight, SvgDoubleAltArrowUp as DoubleAltArrowUp, SvgDown as Down, SvgDownload as Download, SvgDownloadFill as DownloadFill, SvgEditFill as EditFill, SvgEditOutline as EditOutline, SvgEditProfile as EditProfile, SvgEmptyFolder as EmptyFolder, SvgEndDocument as EndDocument, SvgEndDocumentFill as EndDocumentFill, SvgEnter as Enter, SvgEnterFill as EnterFill, SvgEntity as Entity, SvgExit as Exit, SvgExportDoc as ExportDoc, SvgExportJpg as ExportJpg, SvgExportPdf as ExportPdf, SvgExportXls as ExportXls, SvgExportZip as ExportZip, SvgEyeClosed as EyeClosed, SvgFavoriteDeselect as FavoriteDeselect, SvgFavoriteSelected as FavoriteSelected, SvgFilter as Filter, SvgFilterFill as FilterFill, SvgFilterTable as FilterTable, SvgForwardSingleColor as ForwardSingleColor, SvgGroupAction as GroupAction, SvgHalfArrowLeft as HalfArrowLeft, SvgHalfArrowRight as HalfArrowRight, SvgHandMoney as HandMoney, SvgHistory as History, SvgHome as Home, SvgImage as Image, SvgInfo as Info, SvgInfoCircleFill as InfoCircleFill, SvgInfoCircleOutline as InfoCircleOutline, SvgInfoSquareFill as InfoSquareFill, SvgInfoSquareOutline as InfoSquareOutline, SvgLeft as Left, SvgLevels as Levels, SvgLibrary as Library, SvgLikeMoney as LikeMoney, SvgLock as Lock, SvgManagement as Management, SvgMaximizeSquare as MaximizeSquare, SvgMenu as Menu, SvgMenuHamburger as MenuHamburger, SvgMenuHorizontalDots as MenuHorizontalDots, SvgMenuVerticalDots as MenuVerticalDots, SvgMinimizeSquare as MinimizeSquare, SvgMoneyBag as MoneyBag, SvgNextDocument as NextDocument, SvgPassword as Password, SvgPayable as Payable, SvgPaymentOrder as PaymentOrder, SvgPettyCash as PettyCash, SvgPicture as Picture, SvgPopup as Popup, SvgPresetFilters as PresetFilters, SvgPreviousDocument as PreviousDocument, SvgPrinter as Printer, SvgPrinterFill as PrinterFill, SvgReceipt as Receipt, SvgReceiptEdit as ReceiptEdit, SvgReceivable as Receivable, SvgReject as Reject, SvgRejectCircleFill as RejectCircleFill, SvgRejectCircleOutline as RejectCircleOutline, SvgRejectFill as RejectFill, SvgRejectSquareFill as RejectSquareFill, SvgRejectSquareOutline as RejectSquareOutline, SvgRejectedReceipt as RejectedReceipt, SvgRejectedReceiptOutline as RejectedReceiptOutline, SvgReport as Report, SvgReportCreator as ReportCreator, SvgRequest as Request, SvgRestart as Restart, SvgRight as Right, SvgRoles as Roles, SvgSave as Save, SvgSchema as Schema, SvgSearch as Search, SvgSetFilter as SetFilter, SvgSetting as Setting, SvgSortHorizontal as SortHorizontal, SvgSquareFill as SquareFill, SvgSquareOutline as SquareOutline, SvgStarInputTitle as StarInputTitle, SvgStatus as Status, SvgTable as Table, SvgTableEdit as TableEdit, SvgTools as Tools, SvgUp as Up, SvgUpload as Upload, SvgUploadFill as UploadFill, SvgUser as User, SvgUserSetting as UserSetting, SvgUserSettingFill as UserSettingFill, SvgViewFill as ViewFill, SvgViewOutline as ViewOutline, SvgViewReceipt as ViewReceipt, SvgWarning as Warning, SvgWarningCircleFill as WarningCircleFill, SvgWarningCircleOutline as WarningCircleOutline, SvgWarningSquareFill as WarningSquareFill, SvgWarningSquareOutline as WarningSquareOutline, Icons as default };
+export { SvgAcceptedReceipt as AcceptedReceipt, SvgActions as Actions, SvgAdd as Add, SvgAddCircleFill as AddCircleFill, SvgAddCircleOutline as AddCircleOutline, SvgAddColumn as AddColumn, SvgAddDocument as AddDocument, SvgAddDocumentPocket as AddDocumentPocket, SvgAddForms as AddForms, SvgAddRow as AddRow, SvgAddSquareFill as AddSquareFill, SvgAddSquareOutline as AddSquareOutline, SvgArchive as Archive, SvgArrowDownBig as ArrowDownBig, SvgArrowDownFill as ArrowDownFill, SvgArrowDownSmall as ArrowDownSmall, SvgArrowLeftBig as ArrowLeftBig, SvgArrowLeftFill as ArrowLeftFill, SvgArrowLeftSmall as ArrowLeftSmall, SvgArrowRightBig as ArrowRightBig, SvgArrowRightFill as ArrowRightFill, SvgArrowRightSmall as ArrowRightSmall, SvgArrowUpBig as ArrowUpBig, SvgArrowUpFill as ArrowUpFill, SvgArrowUpSmall as ArrowUpSmall, SvgAttachment as Attachment, SvgBackSingleColor as BackSingleColor, SvgBasicInfo as BasicInfo, SvgBellFill as BellFill, SvgBellOutline as BellOutline, SvgCalculator as Calculator, SvgCalculatorMinimalistic as CalculatorMinimalistic, SvgCalendar as Calendar, SvgCalling as Calling, SvgCameraRotate as CameraRotate, SvgCameraRotateFill as CameraRotateFill, SvgCaptcha as Captcha, SvgCard as Card, SvgCard2 as Card2, SvgCardReceive as CardReceive, SvgCardSearch as CardSearch, SvgCardSend as CardSend, SvgCardTransfer as CardTransfer, SvgChangeLogo as ChangeLogo, SvgChat as Chat, SvgCheck as Check, SvgCheckCircleFill as CheckCircleFill, SvgCheckCircleOutline as CheckCircleOutline, SvgCheckSquareFill as CheckSquareFill, SvgCheckSquareOutline as CheckSquareOutline, SvgChecklist as Checklist, SvgCircleFill as CircleFill, SvgCircleOutline as CircleOutline, SvgClockCircle as ClockCircle, SvgClockDark as ClockDark, SvgClockSquare as ClockSquare, SvgClose as Close, SvgCloseCircleFill as CloseCircleFill, SvgCloseCircleOutline as CloseCircleOutline, SvgCloseSquareFill as CloseSquareFill, SvgCloseSquareOutline as CloseSquareOutline, SvgCoding as Coding, SvgCompanies as Companies, SvgCopy as Copy, SvgCopyRow as CopyRow, SvgDashboard as Dashboard, SvgDateTime as DateTime, SvgDelete as Delete, SvgDeleteFill as DeleteFill, SvgDeleteRow as DeleteRow, SvgDescription as Description, SvgDescriptionFill as DescriptionFill, SvgDescriptionOutline as DescriptionOutline, SvgDirection as Direction, SvgDollarCircle as DollarCircle, SvgDollarCircleCancel as DollarCircleCancel, SvgDollarCircleChart as DollarCircleChart, SvgDollarCircleExpensive as DollarCircleExpensive, SvgDollarCircleIncome as DollarCircleIncome, SvgDollarCircleTransfer as DollarCircleTransfer, SvgDollarSquare as DollarSquare, SvgDollarSquareCancel as DollarSquareCancel, SvgDollarSquareChart as DollarSquareChart, SvgDollarSquareExpensive as DollarSquareExpensive, SvgDollarSquareIncome as DollarSquareIncome, SvgDollarSquareTransfer as DollarSquareTransfer, SvgDoubleAltArrowDown as DoubleAltArrowDown, SvgDoubleAltArrowLeft as DoubleAltArrowLeft, SvgDoubleAltArrowRight as DoubleAltArrowRight, SvgDoubleAltArrowUp as DoubleAltArrowUp, SvgDown as Down, SvgDownload as Download, SvgDownloadFill as DownloadFill, SvgEditFill as EditFill, SvgEditOutline as EditOutline, SvgEditProfile as EditProfile, SvgEmptyFolder as EmptyFolder, SvgEndDocument as EndDocument, SvgEndDocumentFill as EndDocumentFill, SvgEnter as Enter, SvgEnterFill as EnterFill, SvgEntity as Entity, SvgExit as Exit, SvgExportDoc as ExportDoc, SvgExportJpg as ExportJpg, SvgExportPdf as ExportPdf, SvgExportXls as ExportXls, SvgExportZip as ExportZip, SvgEyeClosed as EyeClosed, SvgFavoriteDeselect as FavoriteDeselect, SvgFavoriteSelected as FavoriteSelected, SvgFilter as Filter, SvgFilterFill as FilterFill, SvgFilterTable as FilterTable, SvgForwardSingleColor as ForwardSingleColor, SvgGroupAction as GroupAction, SvgHalfArrowLeft as HalfArrowLeft, SvgHalfArrowRight as HalfArrowRight, SvgHandMoney as HandMoney, SvgHistory as History, SvgHome as Home, SvgImage as Image, SvgInfo as Info, SvgInfoCircleFill as InfoCircleFill, SvgInfoCircleOutline as InfoCircleOutline, SvgInfoSquareFill as InfoSquareFill, SvgInfoSquareOutline as InfoSquareOutline, SvgLeft as Left, SvgLevels as Levels, SvgLibrary as Library, SvgLikeMoney as LikeMoney, SvgLock as Lock, SvgManagement as Management, SvgMaximizeSquare as MaximizeSquare, SvgMenu as Menu, SvgMenuHamburger as MenuHamburger, SvgMenuHorizontalDots as MenuHorizontalDots, SvgMenuVerticalDots as MenuVerticalDots, SvgMinimizeSquare as MinimizeSquare, SvgMoneyBag as MoneyBag, SvgNextDocument as NextDocument, SvgPassword as Password, SvgPayable as Payable, SvgPaymentOrder as PaymentOrder, SvgPettyCash as PettyCash, SvgPicture as Picture, SvgPopup as Popup, SvgPresetFilters as PresetFilters, SvgPreviousDocument as PreviousDocument, SvgPrinter as Printer, SvgPrinterFill as PrinterFill, SvgReceipt as Receipt, SvgReceiptEdit as ReceiptEdit, SvgReceivable as Receivable, SvgReject as Reject, SvgRejectCircleFill as RejectCircleFill, SvgRejectCircleOutline as RejectCircleOutline, SvgRejectFill as RejectFill, SvgRejectSquareFill as RejectSquareFill, SvgRejectSquareOutline as RejectSquareOutline, SvgRejectedReceipt as RejectedReceipt, SvgRejectedReceiptOutline as RejectedReceiptOutline, SvgReport as Report, SvgReportCreator as ReportCreator, SvgRequest as Request, SvgRestart as Restart, SvgRight as Right, SvgRoles as Roles, SvgSave as Save, SvgSchema as Schema, SvgSearch as Search, SvgSetFilter as SetFilter, SvgSetting as Setting, SvgSortHorizontal as SortHorizontal, SvgSquareFill as SquareFill, SvgSquareOutline as SquareOutline, SvgStarInputTitle as StarInputTitle, SvgStatus as Status, SvgTable as Table, SvgTableEdit as TableEdit, SvgTools as Tools, SvgUnarchive as Unarchive, SvgUp as Up, SvgUpload as Upload, SvgUploadFill as UploadFill, SvgUser as User, SvgUserSetting as UserSetting, SvgUserSettingFill as UserSettingFill, SvgViewFill as ViewFill, SvgViewOutline as ViewOutline, SvgViewReceipt as ViewReceipt, SvgWarning as Warning, SvgWarningCircleFill as WarningCircleFill, SvgWarningCircleOutline as WarningCircleOutline, SvgWarningSquareFill as WarningSquareFill, SvgWarningSquareOutline as WarningSquareOutline, Icons as default };
+//# sourceMappingURL=index.esm.js.map
