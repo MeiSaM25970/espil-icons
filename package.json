@@ -34,6 +34,9 @@
     "styled-components": "^6.1.15",
     "rollup-plugin-filesize": "^10.0.0"
   },
+  "peerDependencies": {
+    "styled-components": "^6.1.15"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/MeiSaM25970/espil-icons"
