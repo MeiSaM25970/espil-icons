@@ -4,7 +4,7 @@ packege of icons design by Mohamad esfilar
 
 ## Demo
 
-Site <a href="https://espil-icons.mv-team.ir">Demo</a>
+Site <a href="https://espil-icons.mv-team.ir" target='_blank' >Demo</a>
 
 ## install
 
