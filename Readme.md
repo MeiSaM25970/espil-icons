@@ -38,7 +38,7 @@ function App() {
 
 ## Screenshot
 
-![Icons](image.png)
+![Icons](Icon-Pack.jpg)
 
 ## Author
 
