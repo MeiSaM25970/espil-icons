@@ -19,30 +19,18 @@ const SvgMenuHamburger = ({
     {...props}
   >
     {title ? <title id={titleId}>{title}</title> : null}
-    <rect
-      width={16}
-      height={2.5}
-      x={4}
-      y={5.527}
+    <path
       fill="currentColor"
-      rx={1.25}
+      d="M18.75 5.527H5.25a1.25 1.25 0 1 0 0 2.5h13.5a1.25 1.25 0 1 0 0-2.5"
     />
-    <rect
-      width={12}
-      height={2.5}
-      x={4}
-      y={10.75}
+    <path
       fill="currentColor"
+      d="M14.75 10.75h-9.5a1.25 1.25 0 1 0 0 2.5h9.5a1.25 1.25 0 1 0 0-2.5"
       opacity={0.5}
-      rx={1.25}
     />
-    <rect
-      width={16}
-      height={2.5}
-      x={4}
-      y={15.973}
+    <path
       fill="currentColor"
-      rx={1.25}
+      d="M18.75 15.973H5.25a1.25 1.25 0 1 0 0 2.5h13.5a1.25 1.25 0 1 0 0-2.5"
     />
   </svg>
 );
