@@ -298,3 +298,4 @@ export { default as WarningCircleOutline } from "./WarningCircleOutline";
 export { default as WarningMessage } from "./WarningMessage";
 export { default as WarningSquareFill } from "./WarningSquareFill";
 export { default as WarningSquareOutline } from "./WarningSquareOutline";
+export { default as Loading } from "./Loading";
