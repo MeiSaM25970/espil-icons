@@ -87,7 +87,7 @@ export type IconsName =
   | "Description"
   | "DescriptionFill"
   | "DescriptionOutline"
-  | "DeviceID"
+  | "DeviceId"
   | "Direction"
   | "DollarCircle"
   | "DollarCircleCancel"
