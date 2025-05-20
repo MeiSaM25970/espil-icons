@@ -2028,18 +2028,22 @@ var Icons = function (_a) {
     }, [name]);
     if (!SelectedIcon)
         return null;
-    return (jsx(IconStyle, __assign({ "$size": size, "$color": color }, restProps, { children: jsx(SelectedIcon, {}) })));
+    return (jsx(IconStyle, __assign({ "$size": size, "$color": color, "$rotate": name === "Loading" }, restProps, { children: jsx(SelectedIcon, {}) })));
 };
-var IconStyle = styled.span(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  ", "\n  ", "\n"], ["\n  ", "\n  ", "\n"])), function (_a) {
+var IconStyle = styled.span(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  ", "\n  ", "\n\n\n  @keyframes rotate {\n    0% {\n      transform: rotate(0);\n    }\n    100% {\n      transform: rotate(360deg);\n    }\n  }\n  ", "\n"], ["\n  ", "\n  ", "\n\n\n  @keyframes rotate {\n    0% {\n      transform: rotate(0);\n    }\n    100% {\n      transform: rotate(360deg);\n    }\n  }\n  ", "\n"])), function (_a) {
     var $size = _a.$size;
     if ($size) {
-        return "\n    svg{\n    width:".concat($size, "px;\n    height:").concat($size, "px;\n    }\n    ");
+        return "\n    svg{\n    width:".concat($size, "px;\n    height:").concat($size, "px;\n    };\n    ");
     }
 }, function (_a) {
     var $color = _a.$color;
     if ($color) {
-        return "\n    svg{\n    path{\n    fill:".concat($color, ";\n    }\n    }\n    ");
+        return "\n    svg{\n    path{\n    fill:".concat($color, ";\n    };\n    };\n    ");
     }
+}, function (_a) {
+    var $rotate = _a.$rotate;
+    return $rotate &&
+        "\n      svg{\n    animation: rotate 1s infinite linear;\n};\n    ";
 });
 var templateObject_1;
 
