@@ -53,7 +53,7 @@ const IconStyle = styled.span<{
     svg{
     width:${$size}px;
     height:${$size}px;
-    }
+    };
     `;
     }
   }}
@@ -63,8 +63,8 @@ const IconStyle = styled.span<{
     svg{
     path{
     fill:${$color};
-    }
-    }
+    };
+    };
     `;
     }
   }}
@@ -78,11 +78,11 @@ const IconStyle = styled.span<{
       transform: rotate(360deg);
     }
   }
-  & {
-    ${({ $rotate }) =>
-      $rotate &&
-      `
+  ${({ $rotate }) =>
+    $rotate &&
+    `
+      svg{
     animation: rotate 1s infinite linear;
+};
     `}
-  }
 `;
