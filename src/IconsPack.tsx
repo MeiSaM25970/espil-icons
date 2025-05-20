@@ -1,4 +1,3 @@
-import React from "react";
 import { FC, HTMLAttributes, useEffect, useState } from "react";
 
 import styled from "styled-components";
@@ -32,7 +31,12 @@ export const Icons: FC<IconsProps> = ({
   if (!SelectedIcon) return null;
 
   return (
-    <IconStyle $size={size} $color={color} {...restProps}>
+    <IconStyle
+      $size={size}
+      $color={color}
+      $rotate={name === "Loading"}
+      {...restProps}
+    >
       <SelectedIcon />
     </IconStyle>
   );
@@ -41,6 +45,7 @@ export const Icons: FC<IconsProps> = ({
 const IconStyle = styled.span<{
   $size: number | undefined;
   $color: string | undefined;
+  $rotate?: boolean;
 }>`
   ${({ $size }) => {
     if ($size) {
@@ -63,4 +68,21 @@ const IconStyle = styled.span<{
     `;
     }
   }}
+
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  & {
+    ${({ $rotate }) =>
+      $rotate &&
+      `
+    animation: rotate 1s infinite linear;
+    `}
+  }
 `;
