@@ -70,7 +70,7 @@ const IconStyle = styled.span<{
   }}
 
 
-  @keyframes rotate {
+  @keyframes rotate-svg {
     0% {
       transform: rotate(0);
     }
@@ -82,7 +82,7 @@ const IconStyle = styled.span<{
     $rotate &&
     `
       svg{
-    animation: rotate 1s infinite linear;
+    animation: rotate-svg 1s infinite linear;
 };
     `}
 `;
