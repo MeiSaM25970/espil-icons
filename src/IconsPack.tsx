@@ -1,6 +1,6 @@
 import { FC, HTMLAttributes, useEffect, useState } from "react";
 
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { IconsName } from "./IconsName";
 import * as icons from "./Icons";
 export interface IconsProps extends HTMLAttributes<HTMLSpanElement> {
@@ -69,20 +69,20 @@ const IconStyle = styled.span<{
     }
   }}
 
+
+  @keyframes rotate-svg {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
   ${({ $rotate }) =>
     $rotate &&
     `
       svg{
-    animation: ${rotateSvg} 1s infinite linear;
+    animation: rotate-svg 1s infinite linear !important;
 };
     `}
-`;
-const rotateSvg = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
 `;
